@@ -1,6 +1,6 @@
 #!/usr/bin/env perl6
 
-use Acme::Cow;
+use Acme::Cow:api<perl6>;
 
 my $VERSION  = "4.0";
 my $progname = $*PROGRAM-NAME;
@@ -49,10 +49,9 @@ $tongue .= substr(0, 2);
 my $cow = $file ?? variant_cow($file) !! Acme::Cow.new;
 construct_face($cow);
 
+$cow.fill = False if $nofill;
+$cow.wrap = $wrap if $wrap;
 $progname.ends-with("think") ?? $cow.think(@text) !! $cow.say(@text);
-$cow.fill(False) if $nofill;
-$cow.wrap($wrap) if $wrap;
-$cow.print;
 
 sub list_cowfiles {
     my $basedir;

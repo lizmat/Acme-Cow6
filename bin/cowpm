@@ -1,26 +1,20 @@
 #!/usr/bin/env perl6
 
-use v6.c;
+use v6.d;
 
-use Acme::Cow;
+use Acme::Cow:api<perl6>;
 
 unit sub MAIN($name);
 
-my $template = Q:to/EOF/;
-use Acme::Cow;
-unit class Acme::Cow::{$NAME} is Acme::Cow;
+print Acme::Cow.process-template(Q:to/EOT/, name => $name.lc, NAME => $name.tc);
+use Acme::Cow:api<perl6>;
 
-my ${$name} = Q:to/EOC/; 
+unit class Acme::Cow::{$NAME} does Acme::Cow['{$balloon}
 
 Insert cute ASCII art here
 
-EOC
-
-method new(|c) { callwith( |c, ... ) }  # add overrides or remove
-method as_string() { callwith(${$name}) }
-EOF
-
-print Acme::Cow.process_template($template, name => $name.lc, NAME => $name.tc);
+'];
+EOT
 
 =begin pod
 
