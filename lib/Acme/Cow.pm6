@@ -39,7 +39,7 @@ role Acme::Cow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>[
     # let the cow think
     multi method think() { self.think($*IN.lines) }
     multi method think(*@text) {
-        self!process-template(
+        self.process-template(
           $.cow, :$.el, :$.er, :$.U, tl => 'o', tr => 'o',
           balloon => self.balloon(@text, 'think').chomp,
         ) but SinkPrints
@@ -48,7 +48,7 @@ role Acme::Cow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>[
     # let the cow say
     multi method say() { self.say($*IN.lines) }
     multi method say(*@text) {
-        self!process-template(
+        self.process-template(
           $.cow, :$.el, :$.er, :$.U, tl => '\\', tr => '/',
           balloon => self.balloon(@text).chomp,
         ) but SinkPrints
@@ -148,8 +148,12 @@ role Acme::Cow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>[
     }
 
     # Text::Template in a nutshell
-    method !process-template($text, *%mapper) {
-        $text.subst(/ '{$' (\w+) '}' /, -> $/ { %mapper{$0} }, :g)
+    method process-template($text, *%mapper) {
+        $text.subst(
+          / '{$' (\w+) '}' /,
+          -> $/ { %mapper{$0} // '{$' ~ $0 ~ '}' },
+          :g
+        )
     }
 }
 
