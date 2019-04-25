@@ -2,5 +2,8 @@ Revision history for Acme-Cow6
 
 {{$NEXT}}
 
+0.0.2  2019-04-25T16:47:26+01:00
+    - Add "api" to META, remove auth/api from classes/roles
+
 0.0.1  2019-04-25T13:56:32+01:00
     - Initial version

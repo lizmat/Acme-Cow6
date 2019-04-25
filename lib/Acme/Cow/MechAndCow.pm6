@@ -22,5 +22,5 @@ my constant mech_and_cow = Q:to/EOC/;
        ||     ||          i_____;----\.____i""\____\
 EOC
 
-unit class Acme::Cow::MechAndCow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>
+unit class Acme::Cow::MechAndCow:ver<0.0.2>
   does Acme::Cow[mech-and-cow, over => 10];

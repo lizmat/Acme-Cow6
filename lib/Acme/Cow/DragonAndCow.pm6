@@ -22,5 +22,4 @@ my constant dragon-and-cow = Q:to/EOC/;
             //    \\               ///-._ _ _ _ _ _ _\{^ - - - - ~
 EOC
 
-unit class Acme::Cow::DragonAndCow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>
-  Acme::Cow[dragon-and-cow];
+unit class Acme::Cow::DragonAndCow:ver<0.0.2> Acme::Cow[dragon-and-cow];

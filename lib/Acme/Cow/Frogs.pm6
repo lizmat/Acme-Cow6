@@ -13,5 +13,5 @@ my constant frogs = Q:to/EOC/;
           '  '--'    ==`-'==        '--'  '
 EOC
 
-unit class Acme::Cow::Frogs:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>
+unit class Acme::Cow::Frogs:ver<0.0.2>
   does Acme::Cow[frogs, over => 46];

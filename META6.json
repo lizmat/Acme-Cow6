@@ -1,4 +1,5 @@
 {
+  "api" : "perl6",
   "auth" : "cpan:ELIZABETH",
   "authors" : [
     "Elizabeth Mattijsen"
@@ -10,13 +11,13 @@
   "name" : "Acme::Cow6",
   "perl" : "6.d",
   "provides" : {
+    "Acme::Cow" : "lib/Acme/Cow.pm6",
     "Acme::Cow::DragonAndCow" : "lib/Acme/Cow/DragonAndCow.pm6",
     "Acme::Cow::Example" : "lib/Acme/Cow/Example.pm6",
     "Acme::Cow::Frogs" : "lib/Acme/Cow/Frogs.pm6",
     "Acme::Cow::MechAndCow" : "lib/Acme/Cow/MechAndCow.pm6",
     "Acme::Cow::Stegosaurus" : "lib/Acme/Cow/Stegosaurus.pm6",
-    "Acme::Cow::TuxStab" : "lib/Acme/Cow/TuxStab.pm6",
-    "Acme::Cow" : "lib/Acme/Cow.pm6"
+    "Acme::Cow::TuxStab" : "lib/Acme/Cow/TuxStab.pm6"
   },
   "resources" : [
     "cows/bong.cow",
@@ -67,6 +68,5 @@
   "source-url" : "https://github.com/lizmat/Acme-Cow6.git",
   "tags" : [ ],
   "test-depends" : [ ],
-  "version" : "0.0.1",
-  "api" : "perl6"
+  "version" : "0.0.2"
 }

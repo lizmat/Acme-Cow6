@@ -20,5 +20,5 @@ my constant stegosaurus = Q:to/EOC/;
                      |_____|        |_____|         ~ - . _ _ _ _ _>
 EOC
 
-unit class Acme::Cow::Stegosaurus:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>
+unit class Acme::Cow::Stegosaurus:ver<0.0.2>
   does Acme::Cow[stegosaurus, over => 20];

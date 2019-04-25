@@ -10,9 +10,7 @@ my constant default-cow = q:to/EOC/;
                 ||     ||
 EOC
 
-role Acme::Cow:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>[
-  $cow = default-cow, |default-capture
-] {
+role Acme::Cow:ver<0.0.2>[$cow = default-cow, |default-capture] {
     has  Str $.cow  is rw;
     has  Str $.el   is rw = 'o';
     has  Str $.er   is rw = 'o';
