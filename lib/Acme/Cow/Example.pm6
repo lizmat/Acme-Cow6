@@ -2,7 +2,7 @@ use v6.c;
 
 use Acme::Cow:auth<cpan:ELIZABETH>:api<perl6>;
 
-unit class Acme::Cow::Example:ver<0.0.2>:auth<cpan:ELIZABETH>:api<perl6> is Acme::Cow;
+unit class Acme::Cow::Example:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6> is Acme::Cow;
 
 my $generic_ascii_art = Q:to/EOC/;
 {$balloon}
@@ -65,7 +65,7 @@ No, it won't be very exciting.
 
 =head1 Acme::Cow::Example code
 
-  unit class Acme::Cow::Example:ver<0.0.2>:auth<cpan:ELIZABETH> is Acme::Cow;
+  unit class Acme::Cow::Example:ver<0.0.1>:auth<cpan:ELIZABETH> is Acme::Cow;
 
   my $generic_ascii_art = Q:to/EOC/;
   {$balloon}

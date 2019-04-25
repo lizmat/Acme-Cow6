@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lizmat/Acme-Cow6.svg?branch=master)](https://travis-ci.org/lizmat/Acme-Cow6)
+
 NAME
 ====
 

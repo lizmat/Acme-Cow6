@@ -25,5 +25,5 @@ my constant tux-being-stabbed = Q:to/EOC/;
                   `--\{__________)        \/
 EOC
 
-unit class Acme::Cow::TuxStab:ver<0.0.2>:auth<cpan:ELIZABETH>:api<perl6>
+unit class Acme::Cow::TuxStab:ver<0.0.1>:auth<cpan:ELIZABETH>:api<perl6>
   does Acme::Cow[tux-being-stabbed, over => 8];
