@@ -13,5 +13,4 @@ my constant frogs = Q:to/EOC/;
           '  '--'    ==`-'==        '--'  '
 EOC
 
-unit class Acme::Cow::Frogs:ver<0.0.2>
-  does Acme::Cow[frogs, over => 46];
+unit class Acme::Cow::Frogs does Acme::Cow[frogs, over => 46];

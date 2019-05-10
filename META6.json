@@ -8,7 +8,7 @@
   "depends" : [ ],
   "description" : "Talking barnyard animals (or ASCII art in general)",
   "license" : "Artistic-2.0",
-  "name" : "Acme::Cow6",
+  "name" : "Acme::Cow",
   "perl" : "6.d",
   "provides" : {
     "Acme::Cow" : "lib/Acme/Cow.pm6",
@@ -68,5 +68,5 @@
   "source-url" : "https://github.com/lizmat/Acme-Cow6.git",
   "tags" : [ ],
   "test-depends" : [ ],
-  "version" : "0.0.2"
+  "version" : "0.0.3"
 }

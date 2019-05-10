@@ -20,5 +20,4 @@ my constant stegosaurus = Q:to/EOC/;
                      |_____|        |_____|         ~ - . _ _ _ _ _>
 EOC
 
-unit class Acme::Cow::Stegosaurus:ver<0.0.2>
-  does Acme::Cow[stegosaurus, over => 20];
+unit class Acme::Cow::Stegosaurus does Acme::Cow[stegosaurus, over => 20];

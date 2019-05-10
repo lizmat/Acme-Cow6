@@ -22,4 +22,4 @@ my constant dragon-and-cow = Q:to/EOC/;
             //    \\               ///-._ _ _ _ _ _ _\{^ - - - - ~
 EOC
 
-unit class Acme::Cow::DragonAndCow:ver<0.0.2> Acme::Cow[dragon-and-cow];
+unit class Acme::Cow::DragonAndCow Acme::Cow[dragon-and-cow];
